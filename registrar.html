@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <!--Metadatos y Descripciones Internas-->
+    <head>
+        <!--Candela Lucena Reyes-->
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" href="css/.css" type="text/css"/>
+        <title>Pagina Registro</title>
+    </head>
+    <!--Body-->
+    <body>
+        <noscript>La página no se muestra de forma correcta</noscript>
+        <form id="formulario">
+
+            Nombre:
+            <input type="text" name="nombre" id="stringNombre" class="boxcomprobar"> 
+            <br>
+
+            Apellidos:
+            <input type="text" name="apellidos" id="stringApellido" class="boxcomprobar">
+            <br>
+
+            Telefono:
+            <input type="text" name="telefono" id="integerTelefono" class="boxcomprobar">
+            <br>
+
+            Email:
+            <input type="text" name="dni" id="integerDni" class="boxcomprobar">
+            <br>
+
+            Edad:
+            <input type="text" name="edad" id="integerEdad" class="boxcomprobar">
+            <br>
+
+            Sexo:
+            <br>
+            <input type="radio" value="hombre" name="pregunta" id="pregunta_hombre" class="boxcomprobar"/> Hombre
+            <br>
+            <input type="radio" value="mujer" name="pregunta" id="pregunta_mujer" class="boxcomprobar"/> Mujer
+            <br>
+
+            Terminos y condiciones:
+            <input type="checkbox" value="publicidad" name="publicidad" id="publicidad" class="boxcomprobar"/>
+            <br>
+
+            <button type="submit" id="botonEnviar">Registrarme</button>
+            <button type="button" id="botonReseteo">Borrar</button>
+        </form>
+        <script type="text/javascript" src="registrar.js"></script>
+    </body>
+</html>
