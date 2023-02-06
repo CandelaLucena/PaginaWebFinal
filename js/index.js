@@ -1,4 +1,4 @@
-window.onload = function(){
+/*window.onload = function(){
   var boton = document.getElementById("registrarBotonUno");
   boton.addEventListener("click",openVentana);
   
@@ -37,3 +37,4 @@ function grande(){
 function pequenyo(){
   this.style.transform = "scale(1.0,1.0)";
 }
+*/
