@@ -7,5 +7,14 @@ body{
 }
 
 #formu{
-    background-color: #e1d6d6 !important;
+    background-color: #212529 !important;
+}
+
+p{
+    color: white;
+    font-family: Verdana, sans-serif !important;
+}
+
+button{
+    font-family: Verdana, sans-serif !important;
 }

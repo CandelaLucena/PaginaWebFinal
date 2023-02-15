@@ -3,50 +3,56 @@
     <!--Metadatos y Descripciones Internas-->
     <head>
         <!--Candela Lucena Reyes-->
-        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <meta charset="utf-8"/>
         <link rel="stylesheet" href="../css/registrar.css" type="text/css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <title>Pagina Registro</title>
     </head>
     <!--Body-->
     <body>
-        <noscript>La página no se muestra de forma correcta</noscript>
-        <form id="formulario">
-
-            Nombre:
-            <input type="text" name="nombre" id="stringNombre" class="boxcomprobar"> 
-            <br>
-
-            Apellidos:
-            <input type="text" name="apellidos" id="stringApellido" class="boxcomprobar">
-            <br>
-
-            Telefono:
-            <input type="text" name="telefono" id="integerTelefono" class="boxcomprobar">
-            <br>
-
-            Email:
-            <input type="text" name="dni" id="integerDni" class="boxcomprobar">
-            <br>
-
-            Edad:
-            <input type="text" name="edad" id="integerEdad" class="boxcomprobar">
-            <br>
-
-            Sexo:
-            <br>
-            <input type="radio" value="hombre" name="pregunta" id="pregunta_hombre" class="boxcomprobar"/> Hombre
-            <br>
-            <input type="radio" value="mujer" name="pregunta" id="pregunta_mujer" class="boxcomprobar"/> Mujer
-            <br>
-
-            Terminos y condiciones:
-            <input type="checkbox" value="publicidad" name="publicidad" id="publicidad" class="boxcomprobar"/>
-            <br>
-
-            <button type="submit" id="botonEnviar">Registrarme</button>
-            <button type="button" id="botonReseteo">Borrar</button>
-        </form>
+        <div class="container">
+            <div class="row align-items-center mx-auto" style="height: 100vh; width: 60vh;">
+                <div class="pt-3 pb-3 rounded" id="formu">
+                    <form id="formulario">
+                        <div class="row">
+                            <div class="col-6">
+                                <p>Nombre</p>
+                                <input type="text" name="nombre" id="stringNombre" class="boxcomprobar form-control">
+                                <br>
+                                <p>Email</p>
+                                <input type="text" name="dni" id="integerDni" class="boxcomprobar form-control">
+                                <br>
+                                <p>Edad</p>
+                                <input type="text" name="edad" id="integerEdad" class="boxcomprobar form-control">
+                                <br>
+                                <p>Sexo</p>
+                                <input type="radio" value="hombre" name="pregunta" id="pregunta_hombre" class="boxcomprobar"/> 
+                                <label class="text-light" for="pregunta_hombre">Hombre</label>
+                                <input type="radio" value="mujer" name="pregunta" id="pregunta_mujer" class="boxcomprobar"/> 
+                                <label class="text-light" for="pregunta_mujer">Mujer</label>
+                                <br>
+                                <button class="rounded btn btn-secondary mt-2" type="submit" id="botonEnviar">Registrarme</button>
+                            </div>
+                            <div class="col-6">
+                                <p>Apellidos</p>
+                                <input type="text" name="apellidos" id="stringApellido" class="boxcomprobar form-control">
+                                <br>
+                                <p>Contraseña</p>
+                                <input type="text" name="pass" id="passId" class="boxcomprobar rounded form-control">
+                                <br>
+                                <p>Telefono</p>
+                                <input type="text" name="telefono" id="integerTelefono" class="boxcomprobar form-control">
+                                <br>
+                                <p>Terminos y condiciones</p>
+                                <input type="checkbox" value="publicidad" name="publicidad" id="publicidad" class="boxcomprobar"/>    
+                                <br>
+                                <button  class="rounded btn btn-secondary mt-3" type="button" id="botonReseteo">Borrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
         <script type="text/javascript" src="../js/registrar.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
