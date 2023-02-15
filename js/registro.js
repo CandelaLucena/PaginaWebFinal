@@ -1,4 +1,4 @@
-/*window.onload = function(){
+window.onload = function(){
   document.addEventListener('contextmenu', noClick);
   document.getElementById("stringNombre").focus();
   
@@ -62,4 +62,3 @@ function resetear(event){
 function noClick(event){
   event.preventDefault();
 }
-*/
