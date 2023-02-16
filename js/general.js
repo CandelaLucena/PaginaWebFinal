@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.nav-link').animate({
-        color: "red"
+    $('.active').animate({
+        color: "#34AA62"
     }, 1500);
 });

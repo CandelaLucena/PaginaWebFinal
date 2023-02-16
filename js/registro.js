@@ -31,7 +31,8 @@ function comprobar(event){
     event.preventDefault();
   }else{
     alert("¡Envió tus datos correctamente!");
-    boton.style.backgroundColor = "none";
+    var boton = document.getElementById("botonEnviar")
+    boton.style.backgroundColor = "#6C757D";
   }
 }
 
@@ -48,8 +49,10 @@ function comprobarVerde(){
 
   if(!(input1.value=="") && !(input2.value=="") && (/^\d{9}$/.test(input3.value)) && (/[^@ \t\r\n]+@gmail\.com$/.test(input4.value)) && (/^\d{2}$/.test(input5.value)) && input8 == true && (input6 == true  || input7 == true )){
     var boton = document.getElementById("botonEnviar")
-    boton.style.backgroundColor = "green";
+    boton.style.backgroundColor = "#34AA62";
   }else{
+    var boton = document.getElementById("botonEnviar")
+    boton.style.backgroundColor = "#6C757D";
   } 
 }
   
@@ -60,5 +63,5 @@ function resetear(event){
 }
 
 function noClick(event){
-  event.preventDefault();
+  //event.preventDefault();
 }
