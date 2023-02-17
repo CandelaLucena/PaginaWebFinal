@@ -1,5 +1,4 @@
 window.onload = function(){
-  document.addEventListener('contextmenu', noClick);
   document.getElementById("stringNombre").focus();
   
   var botonVerde = document.getElementsByClassName("boxcomprobar");
@@ -60,8 +59,4 @@ function resetear(event){
   document.getElementById("formulario").reset();
   alert("¡Los datos se resetearon!");
   //event.stopPropagation();
-}
-
-function noClick(event){
-  //event.preventDefault();
 }
