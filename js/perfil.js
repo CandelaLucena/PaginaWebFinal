@@ -22,7 +22,7 @@ $(document).ready(function(){
     });
 
     $(".irBorrar").click(function(){
-        $(this).delete();
+        $(this).parent().parent().parent().remove();
     });
 
 });
