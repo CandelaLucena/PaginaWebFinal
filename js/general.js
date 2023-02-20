@@ -4,10 +4,9 @@ $(document).ready(function(){
     }, 1500);
 });
 
-window.onload = function(){
-    document.addEventListener('contextmenu', noClick);
-}
 
+
+document.addEventListener('contextmenu', noClick);
 function noClick(event){
     //event.preventDefault();
 }  

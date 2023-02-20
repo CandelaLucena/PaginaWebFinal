@@ -2,7 +2,7 @@
   var boton = document.getElementById("registrarBotonUno");
   boton.addEventListener("click",openVentana);
   
-  document.addEventListener('contextmenu', noClick);
+
   
   var izquierda = document.getElementsByClassName("divfloatleft");
   for (let index = 0; index < izquierda.length; index++) {
@@ -26,9 +26,6 @@ function openVentana(){
   window.open("registrar.html");
 }
 
-function noClick(event){
-  event.preventDefault();
-}
 
 function grande(){
   this.style.transform = "scale(1.2,1.2)";

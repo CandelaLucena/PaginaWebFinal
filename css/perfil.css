@@ -6,9 +6,7 @@ body{
     background-size: cover;
 }
 
-#columnaUno{
-    background-color: #212529 !important;
-}
+
 
 p{
     color: white !important;
@@ -18,4 +16,21 @@ p{
 h1{
     color: white !important;
     font-family: Verdana, sans-serif !important;
+}
+
+.card-text{
+    color: black !important;
+}
+
+.row{
+    background-color: #212529 !important;
+}
+
+#columnaUno{
+    transform: scale(1);
+}
+
+.btn-primary{
+    background-color: #34AA62 !important;
+    border-color: #34AA62 !important;
 }
