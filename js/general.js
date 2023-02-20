@@ -4,8 +4,6 @@ $(document).ready(function(){
     }, 1500);
 });
 
-
-
 document.addEventListener('contextmenu', noClick);
 function noClick(event){
     //event.preventDefault();

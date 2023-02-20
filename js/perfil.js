@@ -1,15 +1,28 @@
 $(document).ready(function(){
-    
+    $(".irBorrar").css('background-color','#34AA62')
+    $(".irDescripcion").css('background-color','#34AA62')
+    $(".irBorrar").css('border-color','#34AA62')
+    $(".irDescripcion").css('border-color','#34AA62')
     $( ".sortable" ).sortable();
-    $("#columnaUno").droppable( {
-	});
 
-    $(".card").mouseover(function(){
-        $('#columnaUno').animate({transform: "scale(2)"}, 5000, 'linear');
+
+
+    $(".irBorrar").mouseover(function(){
+        $(this).animate({
+            backgroundColor: "#CC6666",
+            borderColor: "#CC6666"
+        }, 0);
     });
 
-    $(".card").mouseout(function(){
-        $('#columnaUno').animate({transform: "scale(1)"}, 5000, 'linear');
+    $(".irBorrar").mouseout(function(){
+        $(this).animate({
+            backgroundColor: "#34AA62",
+            borderColor: "#34AA62"
+        }, 0);
+    });
+
+    $(".irBorrar").click(function(){
+        $(this).delete();
     });
 
 });

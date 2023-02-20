@@ -6,8 +6,6 @@ body{
     background-size: cover;
 }
 
-
-
 p{
     color: white !important;
     font-family: Verdana, sans-serif !important;
@@ -26,11 +24,16 @@ h1{
     background-color: #212529 !important;
 }
 
-#columnaUno{
+.card{
     transform: scale(1);
 }
 
-.btn-primary{
-    background-color: #34AA62 !important;
-    border-color: #34AA62 !important;
+.irDescripcion{
+    background-color: #34AA62 ;
+    border-color: #34AA62 ;
+}
+
+.irBorrar{
+    background-color: #34AA62 ;
+    border-color: #34AA62 ;
 }
