@@ -4,6 +4,8 @@ $(document).ready(function(){
     $(".irDescripcion").css('background-color','#34AA62')
     $(".irBorrar").css('border-color','#34AA62')
     $(".irDescripcion").css('border-color','#34AA62')
+    $(".irEdicion").css('background-color','#34AA62')
+    $(".irEdicion").css('border-color','#34AA62')
 
     //Script para poder mover las cartas a voluntad
     $( ".sortable" ).sortable();
@@ -30,13 +32,11 @@ $(document).ready(function(){
     //Boton para crear una carta en DOM
     $(".crearCarta").click(function(){
         $.ajax({
-            url: "archivoCarta.html",
+            url: "../js/archivoCarta.txt",
             context: document.body,
             success: function(response){
-                $(".sortable").html(response);
+                $('#invisible').after(response);
             }
         });
     });
-
-
 });
