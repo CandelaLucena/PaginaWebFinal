@@ -1,20 +1,25 @@
 window.onload = function(){
+  //Script para mantener el focus en el input del nombre en el registro
   document.getElementById("stringNombre").focus();
   
+  //Script que comprueba si se han rellenado correctamente para iluminar el boton de registro en verde
   var botonVerde = document.getElementsByClassName("boxcomprobar");
   for (let index = 0; index < botonVerde.length; index++) {
     botonVerde[index].addEventListener("mouseout", comprobarVerde);
   }
 
+  //Script que comprueba si se han rellenado bien los campos para enviar un mensaje de correcto o error al enciar el formulario de registro
   var formulario = document.getElementById("formulario");
   formulario.addEventListener("submit", comprobar)
 
+  //Script que resetea todo el formulario de registro si se pulsa
   var reseteo = document.getElementById("botonReseteo");
   reseteo.addEventListener("click", resetear);
   
 }
   
 function comprobar(event){
+  
   var input1 = document.getElementById("stringNombre");
   var input2 = document.getElementById("stringApellido");
   var input3 = document.getElementById("integerTelefono");
