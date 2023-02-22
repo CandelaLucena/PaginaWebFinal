@@ -18,3 +18,9 @@ p{
 button{
     font-family: Verdana, sans-serif !important;
 }
+
+.icono{
+    width: 25px;
+    height: 30px;
+    transform: rotate(10deg);
+}
