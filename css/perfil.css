@@ -16,7 +16,7 @@ h1{
     font-family: Verdana, sans-serif !important;
 }
 
-h2{
+h3{
     color: white !important;
     font-family: Verdana, sans-serif !important;
 }
@@ -29,6 +29,16 @@ h2{
     display: inline-block;
     height: 100px;
     width: 100px;
+    border-radius: 100%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.circularDivDos {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
     border-radius: 100%;
     text-align: center;
     position: relative;
