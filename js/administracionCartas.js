@@ -39,4 +39,12 @@ $(document).ready(function(){
             }
         });
     });
+
+    //Script para hacer grande y pequeñas las cartas
+    $(".cartita").mouseover(function(){
+        $(this).css('transform','scale(1.1)')
+    });
+    $(".cartita").mouseout(function(){
+        $(this).css('transform','scale(1)')
+    });
 });
