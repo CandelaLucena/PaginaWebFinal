@@ -1,6 +1,6 @@
 //Script para iluminar la barra de navegación según donde te encuentres dentro de la página
 $(document).ready(function(){
-    $('.active').animate({
+    $('.activenav').animate({
         color: "#34AA62"
     }, 1500);
 });
